@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Задание ДЗ — main" id="KFaLYLjGzoosbzhJucCt">
+    <mxGraphModel dx="1355" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Начало main" vertex="1">
+          <mxGeometry height="55" width="180" x="760" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="m_input" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Ввести номер дня недели &amp;nbsp;(1–7)" vertex="1">
+          <mxGeometry height="65" width="300" x="700" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m_call" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Вызов функции:&lt;br&gt;&lt;b&gt;daysToSunday = dzdayTask(day)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="370" x="665" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="m_invalid" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Функция вернула&lt;br&gt;&lt;b&gt;daysToSunday == -1?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="725" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="m_error" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести: «Ошибка: неверный номер дня!»" vertex="1">
+          <mxGeometry height="70" width="310" x="1120" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="m_error_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Конец main" vertex="1">
+          <mxGeometry height="55" width="180" x="1185" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="m_switch" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Выбор дня недели&lt;br&gt;&lt;b&gt;switch (day)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="95" width="300" x="700" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Понедельник»" vertex="1">
+          <mxGeometry height="70" width="180" x="35" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Вторник»" vertex="1">
+          <mxGeometry height="70" width="180" x="265" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Среда»" vertex="1">
+          <mxGeometry height="70" width="180" x="495" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Четверг»" vertex="1">
+          <mxGeometry height="70" width="180" x="725" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case5" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Пятница»" vertex="1">
+          <mxGeometry height="70" width="180" x="955" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case6" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Суббота»" vertex="1">
+          <mxGeometry height="70" width="180" x="1185" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case7" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести «Воскресенье»" vertex="1">
+          <mxGeometry height="70" width="180" x="1415" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="m_days_left" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Вывести: количество дней до воскресенья&lt;br&gt;&lt;b&gt;daysToSunday&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="390" x="655" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="m_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Конец main" vertex="1">
+          <mxGeometry height="55" width="180" x="760" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="me1" edge="1" parent="1" source="m_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m_input" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me2" edge="1" parent="1" source="m_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m_call" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me3" edge="1" parent="1" source="m_call" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m_invalid" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me_yes" edge="1" parent="1" source="m_invalid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="m_error" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me_err_end" edge="1" parent="1" source="m_error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m_error_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me_no" edge="1" parent="1" source="m_invalid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_switch" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge1" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.060;exitY=1;entryX=0.5;entryY=0;" target="m_case1" value="case 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join1" edge="1" parent="1" source="m_case1" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge2" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.206;exitY=1;entryX=0.5;entryY=0;" target="m_case2" value="case 2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join2" edge="1" parent="1" source="m_case2" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge3" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.352;exitY=1;entryX=0.5;entryY=0;" target="m_case3" value="case 3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join3" edge="1" parent="1" source="m_case3" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge4" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.498;exitY=1;entryX=0.5;entryY=0;" target="m_case4" value="case 4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join4" edge="1" parent="1" source="m_case4" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge5" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.644;exitY=1;entryX=0.5;entryY=0;" target="m_case5" value="case 5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join5" edge="1" parent="1" source="m_case5" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge6" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.790;exitY=1;entryX=0.5;entryY=0;" target="m_case6" value="case 6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join6" edge="1" parent="1" source="m_case6" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_case_edge7" edge="1" parent="1" source="m_switch" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.936;exitY=1;entryX=0.5;entryY=0;" target="m_case7" value="case 7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m_join7" edge="1" parent="1" source="m_case7" style="edgeStyle=none;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m_days_left" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="me_end" edge="1" parent="1" source="m_days_left" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="m_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Функция dzdayTask(day)" id="YoWj-iQaqDwp87gt0PWa">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Начало функции&lt;br&gt;&lt;b&gt;dzdayTask(day)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="260" x="390" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f_decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Номер дня неверный?&lt;br&gt;&lt;b&gt;day &amp;lt; 1 || day &amp;gt; 7&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="230" x="405" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="f_invalid_return" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Вернуть &lt;b&gt;-1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="190" x="735" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="f_invalid_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Возврат в main&lt;br&gt;(ошибка)" vertex="1">
+          <mxGeometry height="60" width="170" x="745" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="f_calc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Вычислить:&lt;br&gt;&lt;b&gt;daysToSunday = 7 - day&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="390" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="f_return" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Вернуть &lt;b&gt;daysToSunday&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="260" x="390" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="f_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Возврат результата в main" vertex="1">
+          <mxGeometry height="60" width="260" x="390" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="fe1" edge="1" parent="1" source="f_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f_decision" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_yes" edge="1" parent="1" source="f_decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="f_invalid_return" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_invalid_end" edge="1" parent="1" source="f_invalid_return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f_invalid_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_no" edge="1" parent="1" source="f_decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="f_calc" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_calc_return" edge="1" parent="1" source="f_calc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f_return" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_return_end" edge="1" parent="1" source="f_return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="f_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
